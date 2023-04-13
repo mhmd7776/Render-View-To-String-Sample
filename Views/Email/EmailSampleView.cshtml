@@ -1,0 +1,26 @@
+﻿@model RenderViewToStringSample.Models.EmailViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Email Template</title>
+</head>
+<body style="margin: 0; padding: 0; -webkit-text-size-adjust: 100%; background-color: #e6f3ed; color: #000000">
+<table id="u_body" style="border-collapse: collapse; table-layout: fixed; border-spacing: 0; vertical-align: top; min-width: 320px; Margin: 0 auto; background-color: #e6f3ed; width: 100%" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr style="vertical-align: top">
+        <td style="word-break: break-word; border-collapse: collapse !important; vertical-align: top">
+
+            <h1>@Model.Title</h1>
+
+            <p>@Model.Content</p>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
